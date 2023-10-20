@@ -1,0 +1,240 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+#inv {
+  visibility: hidden;
+}
+
+header {
+  background-color: #fff;
+  height: 75px;
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 1px #c3bebe;
+  align-items: center;
+}
+
+header > *:first-child {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+nav > a:hover {
+  font-weight: 700;
+}
+
+.dropbtn {
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.main > :first-child {
+  background-color: #fff;
+  width: 80%;
+  padding: 20px;
+  height: auto;
+  min-height: 500px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.noticia-2 {
+  cursor: pointer;
+  width: 400px;
+  height: 250px;
+  background-size: cover;
+  align-items: flex-end;
+  display: flex;
+  border-radius: 6px;
+  position: relative;
+}
+
+.noticia-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.noticia-2 p {
+  z-index: 3;
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 23px;
+  padding-left: 15px;
+}
+
+.noticia-2 img:hover {
+  
+  transform: scale(1.04);
+}
+
+.noticia-2 p:hover {
+  text-decoration: underline;
+}
+
+.noticia-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.noticia-1 {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 25px;
+
+  :first-child {
+    text-align: center;
+    font-size: 23px;
+  }
+}
+
+.noticia-1 p {
+  font-size: 17px;
+  font-weight: medium;
+}
+
+.noticia-1 a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.noticia-1 a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.noticia-3 {
+  width: 530px;
+  height: 200px;
+  padding: 10px 10px 0px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+}
+
+.noticia-3 .sub-titulo {
+  font-size: 13px;
+  font-weight: medium;
+}
+
+.noticia-3 .descricao {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.noticia-3 .titulo-not {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.noticia-3 .titulo-not:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.noticia-3 img {
+  width: 50%;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 17px;
+}
+
+.noticias {
+ padding: 0px 15px 0px 15px;
+}
+
+.noticias .noticia-2{
+  margin-bottom: 10px;
+}
+
+
+.artigos{
+  display: flex;
+  flex-direction: column;
+}
+
+.artigos .noticia-1, .noticia-3{
+  margin-bottom: 10px;
+}
