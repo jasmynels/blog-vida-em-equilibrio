@@ -61,7 +61,6 @@ nav > a:hover {
   border-radius: 5px;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 10px 14px;
@@ -69,17 +68,14 @@ nav > a:hover {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   font-weight: 700;
 }
@@ -92,7 +88,7 @@ nav > a:hover {
 
 .main > :first-child {
   background-color: #fff;
-  width: 80%;
+  width: 70%;
   padding: 20px;
   height: auto;
   min-height: 500px;
@@ -119,7 +115,9 @@ nav > a:hover {
   display: block;
 }
 
-.noticia-2 p {
+.noticia-2 a {
+  margin-bottom: 10px;
+  text-decoration: none;
   z-index: 3;
   position: absolute;
   color: #fff;
@@ -130,11 +128,10 @@ nav > a:hover {
 }
 
 .noticia-2 img:hover {
-  
   transform: scale(1.04);
 }
 
-.noticia-2 p:hover {
+.noticia-2 a:hover {
   text-decoration: underline;
 }
 
@@ -149,7 +146,8 @@ nav > a:hover {
 }
 
 .noticia-1 {
-  width: 500px;
+  min-width: 500px;
+  width: auto;
   height: 350px;
   border: 1px solid #d9d9d9;
   border-radius: 6px;
@@ -185,7 +183,8 @@ nav > a:hover {
 }
 
 .noticia-3 {
-  width: 530px;
+  min-width: 530px;
+  width: auto;
   height: 200px;
   padding: 10px 10px 0px 10px;
   border: 1px solid #d9d9d9;
@@ -209,7 +208,7 @@ nav > a:hover {
   font-weight: bold;
 }
 
-.noticia-3 .titulo-not:hover{
+.noticia-3 .titulo-not:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -222,19 +221,21 @@ nav > a:hover {
 }
 
 .noticias {
- padding: 0px 15px 0px 15px;
+  padding: 0px 15px 0px 15px;
+  width: 40%;
 }
 
-.noticias .noticia-2{
+.noticias .noticia-2 {
   margin-bottom: 10px;
 }
 
-
-.artigos{
+.artigos {
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
 
-.artigos .noticia-1, .noticia-3{
+.artigos .noticia-1,
+.noticia-3 {
   margin-bottom: 10px;
 }
